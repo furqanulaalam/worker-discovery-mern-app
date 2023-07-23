@@ -17,7 +17,8 @@ Lavoro is a worker discovery MERN app designed with ease of use in mind. The app
 ```
 
 3. Install dependencies
-   Setting up client side
+
+Setting up client side
 
 ```bash
   cd client
