@@ -34,13 +34,13 @@ Setting up server side
 
 4. Specify these environment variables in server directory in a .env file
 
-ACCESS_TOKEN_SECRET
+&nbsp;&nbsp;&nbsp;&nbsp;ACCESS_TOKEN_SECRET
 
-DB_URL
+&nbsp;&nbsp;&nbsp;&nbsp;DB_URL
 
-DEFAULT_IMG_URL (absolute path to db/images/default.png in the server directory).
+&nbsp;&nbsp;&nbsp;&nbsp;DEFAULT_IMG_URL (absolute path to db/images/default.png in the server directory).
 
-IMG_URL (absolute path to db/images/ in the server directory).
+&nbsp;&nbsp;&nbsp;&nbsp;IMG_URL (absolute path to db/images/ in the server directory).
 
 5. Start backend server from the server directory by running:
 
