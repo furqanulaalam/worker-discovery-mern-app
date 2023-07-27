@@ -1,6 +1,5 @@
-import "dotenv/config";
-
 import fs from "fs";
+import path from "path";
 
 import express from "express";
 
@@ -141,13 +140,14 @@ router.put(
 
 router.get("/workers/avatar/:avatarId", async (req, res) => {
   const email = req.params.avatarId;
-  const path = process.env.IMG_URL + email + ".png";
+  const loc = path.resolve("./db/images/" + email + ".png");
+  const defaultImgLoc = path.resolve("./db/images/default.png");
   res.set("Content-Type", "image/png");
 
-  if (fs.existsSync(path)) {
-    res.sendFile(path);
+  if (fs.existsSync(loc)) {
+    res.sendFile(loc);
   } else {
-    res.sendFile(process.env.DEFAULT_IMG_URL);
+    res.sendFile(defaultImgLoc);
   }
 });
 

@@ -38,10 +38,6 @@ Setting up server side
 
 &nbsp;&nbsp;&nbsp;&nbsp;DB_URL
 
-&nbsp;&nbsp;&nbsp;&nbsp;DEFAULT_IMG_URL (absolute path to db/images/default.png in the server directory).
-
-&nbsp;&nbsp;&nbsp;&nbsp;IMG_URL (absolute path to db/images/ in the server directory).
-
 5. Start backend server from the server directory by running:
 
 ```bash
