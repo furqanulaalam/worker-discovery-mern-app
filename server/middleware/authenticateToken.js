@@ -9,7 +9,7 @@ async function authenticateToken(req, res, next) {
   const token = authHeader && authHeader.split(" ")[1];
   const existing = await Token.findOne({ token: token });
 
-  if (token === null) {
+  if (!token) {
     return res.sendStatus(401);
   }
   if (!existing) {
